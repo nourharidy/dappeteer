@@ -259,7 +259,7 @@ async function closeNotificationPage(browser) {
       try {
         const page = await target.page()
         await page.close();
-      } catch { }
+      } catch (e) { }
     }
   })
 }
